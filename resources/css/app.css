@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.sunglow-img {
+  filter: invert(63%) sepia(31%) saturate(2262%) hue-rotate(5deg)
+    brightness(114%) contrast(103%);
+}
+
+.moonglow-img {
+  filter: invert(90%) sepia(6%) saturate(177%) hue-rotate(194deg)
+    brightness(85%) contrast(92%);
+}
+
+.selected-menu {
+  filter: invert(5%) sepia(9%) saturate(1685%) hue-rotate(349deg)
+    brightness(99%) contrast(100%);
+}
+
+.unselected-menu {
+  filter: invert(89%) sepia(95%) saturate(403%) hue-rotate(308deg)
+    brightness(101%) contrast(96%);
+}
+
+.arrow-dark {
+  filter: invert(14%) sepia(16%) saturate(698%) hue-rotate(155deg)
+    brightness(102%) contrast(86%);
+}
+
+.full-heart {
+  filter: invert(21%) sepia(84%) saturate(7487%) hue-rotate(359deg)
+    brightness(109%) contrast(114%);
+}
+
+.white-icon {
+  filter: invert(97%) sepia(97%) saturate(13%) hue-rotate(221deg)
+    brightness(105%) contrast(103%);
+}
+
+.active-qty {
+  filter: invert(53%) sepia(98%) saturate(4904%) hue-rotate(8deg)
+    brightness(99%) contrast(101%);
+}
+
+.gray-arrow {
+  filter: invert(24%) sepia(7%) saturate(708%) hue-rotate(143deg)
+    brightness(103%) contrast(86%);
+}
+
+.disabled-qty {
+  filter: invert(91%) sepia(6%) saturate(194%) hue-rotate(194deg)
+    brightness(86%) contrast(85%);
+}
+
+.checklist-green {
+  filter: invert(83%) sepia(7%) saturate(7499%) hue-rotate(73deg)
+    brightness(90%) contrast(128%);
+}
+
+.wrap-one-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  max-width: 33rem;
+  max-height: 1.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrap-three-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Change this value to set the number of lines to display before truncation */
+  max-height: 5.5rem; /* Calculate this value based on the line-height and the number of lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,9 @@
+
+.pattern{
+    background-image: url(../../img/background/pattern-hijau.png);
+}
+
+p.text-justify {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
